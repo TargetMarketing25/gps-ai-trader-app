@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPS AI Trader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+    <header class="top-header">GPS Trading | AI Signal Assistant</header>
+
+    <main class="app-shell">
+      <section id="welcomeScreen" class="screen active welcome-card">
+        <h1>GPS AI Trader 🤖📈</h1>
+        <p>مساعد ذكي يساعدك تختار صفقة مناسبة حسب أسلوبك ورأس مالك.</p>
+        <button id="startBtn" class="btn btn-primary">ابدأ التحليل</button>
+      </section>
+
+      <section id="chatScreen" class="screen">
+        <div id="chatContainer" class="chat-container"></div>
+        <div id="optionsContainer" class="options-container"></div>
+      </section>
+
+      <section id="loadingScreen" class="screen loading-screen">
+        <div class="loader-ring"></div>
+        <p class="loading-line">جاري تحليل السوق...</p>
+        <p class="loading-line">تحليل السيولة...</p>
+        <p class="loading-line">حساب إدارة المخاطر...</p>
+        <p class="loading-line">تجهيز الإشارة...</p>
+      </section>
+
+      <section id="resultScreen" class="screen">
+        <article id="resultCard" class="result-card"></article>
+        <p class="disclaimer">
+          ⚠️ تنبيه مهم: هذه الإشارة تعليمية وتجريبية وليست توصية مالية مباشرة. التداول
+          يحتوي على مخاطر، والنتائج السابقة لا تضمن الأرباح المستقبلية.
+        </p>
+        <div class="result-actions">
+          <button id="newSignalBtn" class="btn btn-secondary">توليد إشارة جديدة</button>
+          <a class="btn btn-primary" href="https://wa.me/201029193804" target="_blank" rel="noopener noreferrer">تواصل واتساب</a>
+          <a class="btn btn-secondary" href="https://t.me/TargetMarketing25" target="_blank" rel="noopener noreferrer">الانضمام لقناة GPS Trading</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>GPS Trading © 2026</p>
+      <p>Trading involves risk.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
